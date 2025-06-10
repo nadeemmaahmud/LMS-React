@@ -3,14 +3,16 @@ import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import Courses from "./components/Courses";
 
 function App() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage/>} />
-        <Route path="/pages" element={<div>Pages</div>} />
-        <Route path="/pages/:pageId" element={<div>Page Details</div>} />
+        
+        <Route path="/courses" element={<Courses/>} />
+        <Route path="/courses/:id" element={<Courses/>} />
 
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/register" element={<RegisterPage/>} />
