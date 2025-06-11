@@ -12,7 +12,6 @@ function Courses() {
     })
     .catch((error) => console.error('Error fatching data: ', error))
     }, [])
-    console.log(courses)
  
   return <CoursesPage courses={courses}/>
 }
